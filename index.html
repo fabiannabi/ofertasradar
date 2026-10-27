@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ofertas Radar MX · ofertas verificadas en Mercado Libre</title>
+<meta name="description" content="Ofertas reales de Mercado Libre, verificadas el 27 oct 2026: tiendas oficiales y vendedores top en belleza, hogar y tech.">
+<meta property="og:title" content="Ofertas Radar MX · ofertas verificadas en Mercado Libre">
+<meta property="og:description" content="Ofertas de Mercado Libre verificadas el 27 oct 2026. Hasta -64%.">
+<meta property="og:image" content="https://fabiannabi.github.io/ofertasradar/og.jpg">
+<meta property="og:url" content="https://fabiannabi.github.io/ofertasradar/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FBF6EF">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="logo.png">
+<style>
+@font-face { font-family: Serif; src: url(fonts/DMSerifDisplay-Regular.ttf); font-display: swap; }
+@font-face { font-family: Serif; font-style: italic; src: url(fonts/DMSerifDisplay-Italic.ttf); font-display: swap; }
+@font-face { font-family: Inter; font-weight: 600; src: url(fonts/InterDisplay-SemiBold.otf); font-display: swap; }
+@font-face { font-family: Inter; font-weight: 700; src: url(fonts/InterDisplay-Bold.otf); font-display: swap; }
+@font-face { font-family: Inter; font-weight: 900; src: url(fonts/InterDisplay-Black.otf); font-display: swap; }
+/* contraste AA (4.5:1): --gris, --coral-t y --verde son las versiones para texto sobre fondos claros;
+   --coral solo como fondo o sobre --tinta */
+:root { --crema: #FBF6EF; --blanco: #FFFFFF; --tinta: #2B2733; --gris: #6A6472; --linea: #EDE5DA;
+  --menta: #7FE0B4; --menta2: #E7F7EF; --coral: #F27D6C; --coral-t: #B8412F; --coral2: #FDEBE7; --arena: #F6EEDC; --lila: #EEEAF8; --verde: #1E7A50; }
+* { box-sizing: border-box; margin: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body { background: var(--crema); color: var(--tinta); font: 600 15px/1.45 Inter, system-ui, sans-serif; }
+a { color: inherit; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+
+header { padding: 22px 0 4px; }
+.marca-top { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 16px; text-decoration: none; }
+.marca-top img { width: 36px; height: 36px; border-radius: 50%; }
+.hero { position: relative; margin-top: 18px; padding: 26px 22px 0; border-radius: 30px; overflow: hidden; color: var(--crema);
+  background: radial-gradient(90% 60% at 100% 0%, rgba(242, 125, 108, .2), transparent 70%), radial-gradient(80% 60% at 0% 100%, rgba(127, 224, 180, .16), transparent 70%), var(--tinta); }
+@media (min-width: 960px) { .hero { display: grid; grid-template-columns: 1.1fr 1fr; padding: 44px 44px 0; } }
+.vivo { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .16); border-radius: 999px; padding: 6px 12px; }
+.vivo i { width: 8px; height: 8px; border-radius: 50%; background: var(--menta); box-shadow: 0 0 0 0 rgba(127, 224, 180, .7); animation: pulso 1.8s infinite; }
+@keyframes pulso { 70% { box-shadow: 0 0 0 9px rgba(127, 224, 180, 0); } 100% { box-shadow: 0 0 0 0 rgba(127, 224, 180, 0); } }
+h1 { font: 400 30px/1.05 Serif, Georgia, serif; margin-top: 18px; }
+h1 .hasta { display: block; font-style: italic; color: var(--menta); }
+h1 .num { display: block; font-size: clamp(104px, 31vw, 170px); line-height: .88; letter-spacing: -.04em; color: var(--coral); margin: 2px 0 6px; }
+h1 .num small { font-size: .5em; vertical-align: .62em; margin-left: .04em; }
+h1 em { font-style: italic; color: var(--menta); }
+.hero p.sub { color: rgba(251, 246, 239, .84); margin-top: 12px; max-width: 28em; }
+.ver { display: inline-flex; align-items: center; gap: 10px; margin-top: 20px; background: var(--coral); color: var(--tinta); text-decoration: none; font-weight: 900; padding: 13px 22px; border-radius: 999px; }
+/* radar: anillos con barrido y puntos de "oferta detectada"; decorativo */
+.radar { position: relative; width: min(78vw, 300px); aspect-ratio: 1; margin: 34px auto 40px; border-radius: 50%;
+  background: repeating-radial-gradient(circle, transparent 0 calc(16.66% - 1px), rgba(127, 224, 180, .22) calc(16.66% - 1px) 16.66%); }
+@media (min-width: 960px) { .radar { align-self: center; justify-self: center; width: 380px; margin: 0 0 0 24px; } }
+.radar::before { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 1.5px solid rgba(127, 224, 180, .5);
+  background: conic-gradient(from 0deg, rgba(127, 224, 180, .45), rgba(127, 224, 180, 0) 80deg, transparent 360deg); animation: barrido 9s linear infinite; }
+.radar::after { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; border-left: 1px solid rgba(127, 224, 180, .18); }
+@keyframes barrido { to { transform: rotate(360deg); } }
+.radar .centro { position: absolute; inset: 34%; border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 6px rgba(127, 224, 180, .18), 0 10px 30px rgba(0, 0, 0, .4); }
+.radar .centro img { width: 100%; height: 100%; display: block; }
+/* cada puntito es un botón de 44 px (área de toque) con el punto dibujado al centro; lleva a una oferta al azar */
+.blip { position: absolute; z-index: 1; width: 44px; height: 44px; margin: -22px; padding: 0; border: 0; border-radius: 50%; background: none; cursor: pointer; }
+.blip::after { content: ""; position: absolute; left: 50%; top: 50%; width: 12px; height: 12px; margin: -6px; border-radius: 50%; background: var(--coral);
+  box-shadow: 0 0 0 0 rgba(242, 125, 108, .6); animation: blip 3s ease-out infinite; transition: transform .2s; }
+.blip:hover::after, .blip:focus-visible::after { transform: scale(1.6); }
+.blip:focus-visible { outline: 2px solid var(--menta); outline-offset: -6px; }
+.blip.b2::after { animation-delay: -1s; background: var(--menta); } .blip.b3::after { animation-delay: -2s; } .blip.b4::after { animation-delay: -.5s; background: var(--crema); }
+@keyframes blip { 0% { box-shadow: 0 0 0 0 rgba(242, 125, 108, .6); } 70%, 100% { box-shadow: 0 0 0 14px rgba(242, 125, 108, 0); } }
+.radar .pista { position: absolute; left: 0; right: 0; bottom: -30px; text-align: center; font-size: 12px; color: rgba(251, 246, 239, .84); }
+/* la oferta elegida por el radar se resalta un momento */
+.card { scroll-margin: 90px; }
+.card.elegida { outline: 3px solid var(--coral-t); outline-offset: 3px; animation: elegida 1s ease-out 2; }
+@keyframes elegida { 50% { transform: scale(1.03); } }
+.garantias { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 18px; padding: 0; list-style: none; font-size: 13px; color: rgba(251, 246, 239, .9); }
+.garantias li::before { content: "✓"; color: var(--menta); font-weight: 900; margin-right: 6px; }
+@media (prefers-reduced-motion: reduce) { .radar::before, .blip::after, .card.elegida { animation: none; } }
+.cinta { grid-column: 1 / -1; margin: 22px -22px 0; padding: 13px 0; overflow: hidden; background: var(--menta); color: var(--tinta); }
+@media (min-width: 960px) { .cinta { margin: 34px -44px 0; } }
+.cinta div { display: flex; width: max-content; animation: cinta 170s linear infinite; }
+.cinta span { font: 900 14px Inter, sans-serif; text-transform: uppercase; letter-spacing: .06em; white-space: nowrap; }
+.cinta span::after { content: "✦"; margin: 0 16px; color: var(--coral); }
+@keyframes cinta { to { transform: translateX(-50%); } }
+
+.canal { display: flex; align-items: center; gap: 14px; margin-top: 14px; padding: 14px 16px; background: var(--tinta); color: var(--crema); border-radius: 20px; text-decoration: none; }
+.canal svg { flex: none; width: 34px; height: 34px; }
+.canal b { display: block; font-size: 16px; }
+.canal span { font-size: 13px; opacity: .75; }
+.canal .flecha { margin-left: auto; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: var(--menta); color: var(--tinta); font-size: 18px; }
+
+h2 { font: 400 32px/1.1 Serif, Georgia, serif; margin: 42px 0 4px; }
+h2 em { font-style: italic; color: var(--coral-t); }
+.h2sub { color: var(--gris); font-size: 14px; margin-bottom: 16px; }
+
+.chips { position: sticky; top: 0; z-index: 2; display: flex; gap: 6px; overflow-x: auto; padding: 10px 16px; margin: 0 -16px 14px; background: rgba(251, 246, 239, .94); backdrop-filter: blur(8px); scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; font: 700 13px Inter, sans-serif; padding: 9px 16px; border-radius: 999px; border: 1px solid var(--linea); background: var(--blanco); color: var(--tinta); cursor: pointer; }
+.chip.on { background: var(--tinta); border-color: var(--tinta); color: var(--crema); }
+
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+@media (min-width: 720px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; } }
+@media (min-width: 1000px) { .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.megas { grid-template-columns: 1fr; }
+@media (min-width: 620px) { .megas { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+.card { background: var(--blanco); border-radius: 22px; box-shadow: 0 1px 2px rgba(43, 39, 51, .05), 0 8px 24px -12px rgba(43, 39, 51, .14); display: flex; flex-direction: column; min-width: 0; overflow: hidden; }
+.card[hidden] { display: none; }
+.ph { position: relative; display: block; aspect-ratio: 1; margin: 8px 8px 0; padding: 10px; border-radius: 16px; background: var(--menta2); }
+.card:nth-child(4n+2) .ph { background: var(--coral2); }
+.card:nth-child(4n+3) .ph { background: var(--arena); }
+.card:nth-child(4n+4) .ph { background: var(--lila); }
+.ph img { width: 100%; height: 100%; display: block; object-fit: contain; border-radius: 10px; mix-blend-mode: multiply; }
+.tag { position: absolute; top: 8px; left: 8px; background: var(--blanco); color: var(--coral-t); font: 900 13px Inter, sans-serif; padding: 4px 10px; border-radius: 999px; box-shadow: 0 2px 8px rgba(43, 39, 51, .1); }
+.tag.neg { color: var(--tinta); font-size: 10px; letter-spacing: .04em; }
+.info { padding: 10px 14px 14px; display: flex; flex-direction: column; flex: 1; }
+.marca { color: var(--gris); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+.of { color: var(--verde); white-space: nowrap; }
+.card h3 { font: 600 14px/1.3 Inter, sans-serif; margin-top: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.6em; }
+.precio { margin-top: 8px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.precio b { font: 400 28px/1 Serif, Georgia, serif; }
+.precio s { color: var(--gris); font-size: 13px; }
+.meta { color: var(--gris); font-size: 12px; margin-top: 4px; min-height: 1.4em; }
+.btn { margin-top: 10px; display: block; text-align: center; background: var(--crema); color: var(--tinta); text-decoration: none; font-weight: 700; font-size: 13px; padding: 10px 8px; border-radius: 999px; border: 1px solid var(--linea); }
+.pie { color: var(--gris); font-size: 10.5px; margin-top: 8px; text-align: center; }
+.mega .ph { background: linear-gradient(140deg, var(--coral2), var(--arena)) !important; }
+.mega .btn { background: var(--tinta); color: var(--crema); border-color: var(--tinta); }
+.mega .precio b { font-size: 34px; }
+@media (max-width: 619px) {
+  .mega { flex-direction: row; }
+  .mega .ph { flex: 0 0 42%; margin: 8px 0 8px 8px; align-self: stretch; aspect-ratio: auto; display: flex; align-items: center; }
+  .mega .ph img { height: auto; aspect-ratio: 1; }
+  .mega .precio b { font-size: 30px; }
+}
+
+.pide { margin-top: 44px; border-radius: 28px; padding: 28px 22px; background: radial-gradient(100% 120% at 100% 0%, var(--coral2), transparent 60%), var(--menta2); }
+.pide p.t { font: 400 34px/1.05 Serif, Georgia, serif; }
+.pide p.t em { font-style: italic; }
+.pide p.d { margin-top: 10px; color: var(--gris); }
+.pide a { display: inline-block; margin-top: 18px; background: var(--tinta); color: var(--crema); text-decoration: none; font-weight: 700; padding: 12px 20px; border-radius: 999px; }
+
+.faq details { border-bottom: 1px solid var(--linea); padding: 15px 2px; }
+.faq summary { font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--coral-t); font-size: 20px; line-height: 1; }
+.faq details[open] summary::after { content: "–"; }
+.faq p { color: var(--gris); margin-top: 8px; }
+
+footer { margin-top: 44px; padding: 24px 0 40px; color: var(--gris); font-size: 12.5px; text-align: center; }
+footer p + p { margin-top: 8px; }
+footer a { font-weight: 700; color: var(--tinta); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="marca-top" href="https://instagram.com/ofertasradar.mx"><img src="logo.png" alt="" width="36" height="36">ofertasradar.mx</a>
+  <div class="hero">
+    <div>
+      <p class="vivo"><i></i>Verificado el 27 oct 2026</p>
+      <h1><span class="hasta">Hasta</span><span class="num">-64<small>%</small></span>en marcas que <em>ya conoces.</em></h1>
+      <p class="sub">Ofertas de Mercado Libre revisadas a mano, de tiendas oficiales y vendedores top.</p>
+      <ul class="garantias"><li>Tiendas oficiales</li><li>Precio del día</li><li>Compra protegida de Mercado Libre</li></ul>
+      <a class="ver" href="#megas">Ver las ofertas ↓</a>
+    </div>
+    <div class="radar"><button type="button" class="blip" style="left:72%;top:26%" aria-label="Ver una oferta al azar"></button><button type="button" class="blip b2" style="left:24%;top:64%" aria-label="Ver una oferta al azar"></button><button type="button" class="blip b3" style="left:80%;top:70%" aria-label="Ver una oferta al azar"></button><button type="button" class="blip b4" style="left:34%;top:20%" aria-label="Ver una oferta al azar"></button><p class="pista">Toca un punto: oferta al azar</p><div class="centro" aria-hidden="true"><img src="logo.png" alt="" width="192" height="192"></div></div>
+    <div class="cinta" aria-hidden="true"><div><span>Philips</span><span>Shark</span><span>BaBylissPRO</span><span>Remington</span><span>Conair</span><span>Revlon</span><span>Homedics</span><span>Xiaomi</span><span>CIICII</span><span>Eufy</span><span>Oral-B</span><span>Dove</span><span>Samsung</span><span>Carolina Herrera</span><span>CeraVe</span><span>Nespresso</span><span>Ninja</span><span>Oster</span><span>T-fal</span><span>Black+Decker</span><span>Chefman</span><span>Roborock</span><span>Versace</span><span>La Roche-Posay</span><span>Eucerin</span><span>Rasasi</span><span>Lattafa</span><span>Soundcore</span><span>Huawei</span><span>JBL</span><span>Afnan</span><span>Philips</span><span>Shark</span><span>BaBylissPRO</span><span>Remington</span><span>Conair</span><span>Revlon</span><span>Homedics</span><span>Xiaomi</span><span>CIICII</span><span>Eufy</span><span>Oral-B</span><span>Dove</span><span>Samsung</span><span>Carolina Herrera</span><span>CeraVe</span><span>Nespresso</span><span>Ninja</span><span>Oster</span><span>T-fal</span><span>Black+Decker</span><span>Chefman</span><span>Roborock</span><span>Versace</span><span>La Roche-Posay</span><span>Eucerin</span><span>Rasasi</span><span>Lattafa</span><span>Soundcore</span><span>Huawei</span><span>JBL</span><span>Afnan</span></div></div>
+  </div>
+  <a class="canal" href="https://whatsapp.com/channel/0029VbDg7woLtOjGkAVMZi3C" target="_blank" rel="noopener">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#25D366"/><path fill="#fff" d="M16 7.2a8.7 8.7 0 0 0-7.5 13.2L7.3 25l4.7-1.2A8.7 8.7 0 1 0 16 7.2Zm0 15.9c-1.3 0-2.6-.4-3.7-1l-.3-.2-2.8.7.8-2.7-.2-.3a7.2 7.2 0 1 1 6.2 3.5Zm4-5.4c-.2-.1-1.3-.6-1.5-.7-.2-.1-.3-.1-.5.1l-.7.9c-.1.1-.3.2-.5.1a5.9 5.9 0 0 1-2.9-2.6c-.2-.4.2-.4.6-1.2.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.4a.8.8 0 0 0-.6.3 2.5 2.5 0 0 0-.8 1.9c0 1.1.8 2.2.9 2.3.1.2 1.6 2.4 3.9 3.4 1.4.6 2 .7 2.7.6.4-.1 1.3-.5 1.5-1.1.2-.5.2-1 .1-1.1l-.4-.2Z"/></svg>
+    <div><b>Canal de WhatsApp</b><span>Ofertas nuevas todos los días</span></div>
+    <span class="flecha">→</span>
+  </a>
+</header>
+
+<main>
+  <h2 id="megas">Mega <em>ofertas</em> de hoy</h2>
+  <p class="h2sub">Las 3 con más ahorro, de tienda oficial.</p>
+  <section class="grid megas">
+<article class="card mega" data-cat="tech">
+  <a class="ph" href="https://meli.la/2NP9sJz" target="_blank" rel="sponsored noopener"><img src="img/galaxy-watch9.jpg" alt="Smartwatch Samsung Galaxy Watch9 44 mm negro" loading="lazy" width="480" height="480"><span class="tag">-53%</span></a>
+  <div class="info">
+    <p class="marca">Samsung <span class="of">✓ Oficial</span></p>
+    <h3>Smartwatch Samsung Galaxy Watch9 44 mm negro</h3>
+    <p class="precio"><b>$5,079</b><s>$10,999</s></p>
+    <p class="meta">★ 4.9 · +500 vendidos</p>
+    <a class="btn" href="https://meli.la/2NP9sJz" target="_blank" rel="sponsored noopener">Ver en Mercado Libre</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card mega" data-cat="belleza">
+  <a class="ph" href="https://meli.la/1LcUJcu" target="_blank" rel="sponsored noopener"><img src="img/ch-men.jpg" alt="Perfume Carolina Herrera CH Men Eau de Toilette 100 ml" loading="lazy" width="480" height="480"><span class="tag">-44%</span></a>
+  <div class="info">
+    <p class="marca">Carolina Herrera <span class="of">✓ Oficial</span></p>
+    <h3>Perfume Carolina Herrera CH Men Eau de Toilette 100 ml</h3>
+    <p class="precio"><b>$1,313</b><s>$2,369</s></p>
+    <p class="meta">★ 4.7 · +5 mil vendidos</p>
+    <a class="btn" href="https://meli.la/1LcUJcu" target="_blank" rel="sponsored noopener">Ver en Mercado Libre</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card mega" data-cat="belleza">
+  <a class="ph" href="https://meli.la/17rnnr9" target="_blank" rel="sponsored noopener"><img src="img/babyliss-set.jpg" alt="Set BaBylissPRO Porcelain Ceramic: plancha 1&quot; y rizadora 1¼&quot;" loading="lazy" width="480" height="480"><span class="tag">-49%</span></a>
+  <div class="info">
+    <p class="marca">BaBylissPRO</p>
+    <h3>Set BaBylissPRO Porcelain Ceramic: plancha 1&quot; y rizadora 1¼&quot;</h3>
+    <p class="precio"><b>$1,788</b><s>$3,569</s></p>
+    <p class="meta">★ 4.8 · +500 vendidos</p>
+    <a class="btn" href="https://meli.la/17rnnr9" target="_blank" rel="sponsored noopener">Ver en Mercado Libre</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+  </section>
+
+  <h2>Todas las <em>ofertas</em></h2>
+  <p class="h2sub">Toca una para verla en Mercado Libre.</p>
+  <div>
+  <nav class="chips" aria-label="Categorías"><button class="chip on" data-f="todo">Todo</button><button class="chip" data-f="belleza">Belleza</button><button class="chip" data-f="casa">Hogar</button><button class="chip" data-f="tech">Tech</button><button class="chip" data-f="general">Bienestar</button></nav>
+  <section class="grid" id="ofertas">
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/2kka2uH" target="_blank" rel="sponsored noopener"><img src="img/philips-8000.jpg" alt="Secadora Philips Serie 8000 alta velocidad ThermoShield" loading="lazy" width="480" height="480"><span class="tag">-29%</span></a>
+  <div class="info">
+    <p class="marca">Philips <span class="of">✓ Oficial</span></p>
+    <h3>Secadora Philips Serie 8000 alta velocidad ThermoShield</h3>
+    <p class="precio"><b>$3,699</b><s>$5,249</s></p>
+    <p class="meta">★ 5.0 · +25 vendidos</p>
+    <a class="btn" href="https://meli.la/2kka2uH" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/1USiKM9" target="_blank" rel="sponsored noopener"><img src="img/shark-flexstyle.jpg" alt="Shark FlexStyle HD430 secadora y moldeador 5 en 1" loading="lazy" width="480" height="480"><span class="tag">-32%</span></a>
+  <div class="info">
+    <p class="marca">Shark <span class="of">✓ Oficial</span></p>
+    <h3>Shark FlexStyle HD430 secadora y moldeador 5 en 1</h3>
+    <p class="precio"><b>$3,509</b><s>$5,199</s></p>
+    <p class="meta">★ 4.7 · +100 vendidos</p>
+    <a class="btn" href="https://meli.la/1USiKM9" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/1yUJ7pV" target="_blank" rel="sponsored noopener"><img src="img/babyliss-optima.jpg" alt="Plancha alaciadora BaBylissPRO Optima 3100 de 1&quot;" loading="lazy" width="480" height="480"><span class="tag">-25%</span></a>
+  <div class="info">
+    <p class="marca">BaBylissPRO <span class="of">✓ Oficial</span></p>
+    <h3>Plancha alaciadora BaBylissPRO Optima 3100 de 1&quot;</h3>
+    <p class="precio"><b>$2,624</b><s>$3,499</s></p>
+    <p class="meta">★ 4.8 · +10 mil vendidos</p>
+    <a class="btn" href="https://meli.la/1yUJ7pV" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/2bnnYRG" target="_blank" rel="sponsored noopener"><img src="img/remington-combo.jpg" alt="Combo Remington plancha alisadora y secadora Aguacate" loading="lazy" width="480" height="480"><span class="tag">-39%</span></a>
+  <div class="info">
+    <p class="marca">Remington <span class="of">✓ Oficial</span></p>
+    <h3>Combo Remington plancha alisadora y secadora Aguacate</h3>
+    <p class="precio"><b>$1,899</b><s>$3,137</s></p>
+    <p class="meta">★ 4.8 · +100 vendidos</p>
+    <a class="btn" href="https://meli.la/2bnnYRG" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/31Bxtzh" target="_blank" rel="sponsored noopener"><img src="img/conair-curl.jpg" alt="Rizador automático Conair Curl Secret de cerámica" loading="lazy" width="480" height="480"><span class="tag">-30%</span></a>
+  <div class="info">
+    <p class="marca">Conair <span class="of">✓ Oficial</span></p>
+    <h3>Rizador automático Conair Curl Secret de cerámica</h3>
+    <p class="precio"><b>$1,399</b><s>$1,999</s></p>
+    <p class="meta">★ 4.9 · +1000 vendidos</p>
+    <a class="btn" href="https://meli.la/31Bxtzh" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/2CwTxH9" target="_blank" rel="sponsored noopener"><img src="img/revlon-onestep.jpg" alt="Cepillo secador Revlon One Step voluminizador de titanio" loading="lazy" width="480" height="480"><span class="tag">-36%</span></a>
+  <div class="info">
+    <p class="marca">Revlon <span class="of">✓ Oficial</span></p>
+    <h3>Cepillo secador Revlon One Step voluminizador de titanio</h3>
+    <p class="precio"><b>$891</b><s>$1,400</s></p>
+    <p class="meta">★ 4.8 · +1000 vendidos</p>
+    <a class="btn" href="https://meli.la/2CwTxH9" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="general">
+  <a class="ph" href="https://meli.la/2hvLRJQ" target="_blank" rel="sponsored noopener"><img src="img/homedics-asiento.jpg" alt="Asiento masajeador shiatsu para espalda Homedics MCS-845H" loading="lazy" width="480" height="480"><span class="tag">-40%</span></a>
+  <div class="info">
+    <p class="marca">Homedics <span class="of">✓ Oficial</span></p>
+    <h3>Asiento masajeador shiatsu para espalda Homedics MCS-845H</h3>
+    <p class="precio"><b>$4,379</b><s>$7,299</s></p>
+    <p class="meta">★ 4.9 · +100 vendidos</p>
+    <a class="btn" href="https://meli.la/2hvLRJQ" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="general">
+  <a class="ph" href="https://meli.la/1m5m5MT" target="_blank" rel="sponsored noopener"><img src="img/homedics-pies.jpg" alt="Masajeador de pies shiatsu Homedics" loading="lazy" width="480" height="480"><span class="tag">-40%</span></a>
+  <div class="info">
+    <p class="marca">Homedics <span class="of">✓ Oficial</span></p>
+    <h3>Masajeador de pies shiatsu Homedics</h3>
+    <p class="precio"><b>$1,019</b><s>$1,699</s></p>
+    <p class="meta">★ 4.4 · +100 vendidos</p>
+    <a class="btn" href="https://meli.la/1m5m5MT" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="general">
+  <a class="ph" href="https://meli.la/29QwVBW" target="_blank" rel="sponsored noopener"><img src="img/homedics-cuello-calor.jpg" alt="Masajeador de cuello shiatsu con calor Homedics NMS-377" loading="lazy" width="480" height="480"><span class="tag">-40%</span></a>
+  <div class="info">
+    <p class="marca">Homedics <span class="of">✓ Oficial</span></p>
+    <h3>Masajeador de cuello shiatsu con calor Homedics NMS-377</h3>
+    <p class="precio"><b>$899</b><s>$1,499</s></p>
+    <p class="meta">★ 5.0 · +25 vendidos</p>
+    <a class="btn" href="https://meli.la/29QwVBW" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="general">
+  <a class="ph" href="https://meli.la/1ZZ3iry" target="_blank" rel="sponsored noopener"><img src="img/homedics-cuello.jpg" alt="Masajeador de cuello Homedics" loading="lazy" width="480" height="480"><span class="tag">-40%</span></a>
+  <div class="info">
+    <p class="marca">Homedics <span class="of">✓ Oficial</span></p>
+    <h3>Masajeador de cuello Homedics</h3>
+    <p class="precio"><b>$599</b><s>$999</s></p>
+    <p class="meta">★ 4.7 · +100 vendidos</p>
+    <a class="btn" href="https://meli.la/1ZZ3iry" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="tech">
+  <a class="ph" href="https://meli.la/2AgeUCE" target="_blank" rel="sponsored noopener"><img src="img/xiaomi-massage-gun.jpg" alt="Pistola masajeadora Xiaomi Massage Gun 2" loading="lazy" width="480" height="480"><span class="tag">-32%</span></a>
+  <div class="info">
+    <p class="marca">Xiaomi <span class="of">✓ Oficial</span></p>
+    <h3>Pistola masajeadora Xiaomi Massage Gun 2</h3>
+    <p class="precio"><b>$1,357</b><s>$1,999</s></p>
+    <p class="meta">★ 4.9 · +25 vendidos</p>
+    <a class="btn" href="https://meli.la/2AgeUCE" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="general">
+  <a class="ph" href="https://meli.la/1MiaLrf" target="_blank" rel="sponsored noopener"><img src="img/ciicii-pistola.jpg" alt="Pistola masajeadora CIICII inalámbrica con 10 cabezales" loading="lazy" width="480" height="480"><span class="tag">-32%</span></a>
+  <div class="info">
+    <p class="marca">CIICII</p>
+    <h3>Pistola masajeadora CIICII inalámbrica con 10 cabezales</h3>
+    <p class="precio"><b>$633</b><s>$933</s></p>
+    <p class="meta">★ 4.7 · +10 mil vendidos</p>
+    <a class="btn" href="https://meli.la/1MiaLrf" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="tech">
+  <a class="ph" href="https://meli.la/1dvE9kd" target="_blank" rel="sponsored noopener"><img src="img/eufy-c20.jpg" alt="Báscula inteligente Eufy by Anker C20" loading="lazy" width="480" height="480"><span class="tag">-29%</span></a>
+  <div class="info">
+    <p class="marca">Eufy <span class="of">✓ Oficial</span></p>
+    <h3>Báscula inteligente Eufy by Anker C20</h3>
+    <p class="precio"><b>$635</b><s>$899</s></p>
+    <p class="meta">★ 4.8 · +500 vendidos</p>
+    <a class="btn" href="https://meli.la/1dvE9kd" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="general">
+  <a class="ph" href="https://meli.la/1fZwhsD" target="_blank" rel="sponsored noopener"><img src="img/oralb-vitality.jpg" alt="Cepillo dental eléctrico Oral-B Vitality Precision Clean" loading="lazy" width="480" height="480"><span class="tag">-26%</span></a>
+  <div class="info">
+    <p class="marca">Oral-B <span class="of">✓ Oficial</span></p>
+    <h3>Cepillo dental eléctrico Oral-B Vitality Precision Clean</h3>
+    <p class="precio"><b>$835</b><s>$1,129</s></p>
+    <p class="meta">★ 4.9 · +500 vendidos</p>
+    <a class="btn" href="https://meli.la/1fZwhsD" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/31tinn7" target="_blank" rel="sponsored noopener"><img src="img/dove-serum.jpg" alt="Sérum corporal Dove con niacinamida 1 L" loading="lazy" width="480" height="480"><span class="tag">-28%</span></a>
+  <div class="info">
+    <p class="marca">Dove</p>
+    <h3>Sérum corporal Dove con niacinamida 1 L</h3>
+    <p class="precio"><b>$358</b><s>$498</s></p>
+    <p class="meta">★ 4.9 · +10 mil vendidos</p>
+    <a class="btn" href="https://meli.la/31tinn7" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/2jUWxcr" target="_blank" rel="sponsored noopener"><img src="img/cerave-gel.jpg" alt="CeraVe Gel limpiador espumoso piel normal a grasa" loading="lazy" width="480" height="480"><span class="tag">-43%</span></a>
+  <div class="info">
+    <p class="marca">CeraVe <span class="of">✓ Oficial</span></p>
+    <h3>CeraVe Gel limpiador espumoso piel normal a grasa</h3>
+    <p class="precio"><b>$255</b><s>$449</s></p>
+    <p class="meta">★ 4.8 · +250 mil vendidos</p>
+    <a class="btn" href="https://meli.la/2jUWxcr" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/2YQPiRo" target="_blank" rel="sponsored noopener"><img src="img/cerave-hidratante.jpg" alt="CeraVe Limpiadora hidratante piel normal a seca" loading="lazy" width="480" height="480"><span class="tag">-43%</span></a>
+  <div class="info">
+    <p class="marca">CeraVe <span class="of">✓ Oficial</span></p>
+    <h3>CeraVe Limpiadora hidratante piel normal a seca</h3>
+    <p class="precio"><b>$335</b><s>$599</s></p>
+    <p class="meta">★ 4.8 · +50 mil vendidos</p>
+    <a class="btn" href="https://meli.la/2YQPiRo" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/1hiwEoA" target="_blank" rel="sponsored noopener"><img src="img/cerave-control473.jpg" alt="CeraVe Limpiador control imperfecciones 473 ml" loading="lazy" width="480" height="480"><span class="tag">-43%</span></a>
+  <div class="info">
+    <p class="marca">CeraVe <span class="of">✓ Oficial</span></p>
+    <h3>CeraVe Limpiador control imperfecciones 473 ml</h3>
+    <p class="precio"><b>$335</b><s>$599</s></p>
+    <p class="meta">★ 4.8 · +10 mil vendidos</p>
+    <a class="btn" href="https://meli.la/1hiwEoA" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/13xevfk" target="_blank" rel="sponsored noopener"><img src="img/cerave-espuma.jpg" alt="CeraVe Crema espuma limpiadora hidratante 236 ml" loading="lazy" width="480" height="480"><span class="tag">-49%</span></a>
+  <div class="info">
+    <p class="marca">CeraVe <span class="of">✓ Oficial</span></p>
+    <h3>CeraVe Crema espuma limpiadora hidratante 236 ml</h3>
+    <p class="precio"><b>$263</b><s>$519</s></p>
+    <p class="meta">★ 4.8 · +50 mil vendidos</p>
+    <a class="btn" href="https://meli.la/13xevfk" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/1qrhSa2" target="_blank" rel="sponsored noopener"><img src="img/cerave-serum.jpg" alt="CeraVe Sérum hidratante con ácido hialurónico 30 ml" loading="lazy" width="480" height="480"><span class="tag">-43%</span></a>
+  <div class="info">
+    <p class="marca">CeraVe <span class="of">✓ Oficial</span></p>
+    <h3>CeraVe Sérum hidratante con ácido hialurónico 30 ml</h3>
+    <p class="precio"><b>$307</b><s>$549</s></p>
+    <p class="meta">★ 4.8 · +10 mil vendidos</p>
+    <a class="btn" href="https://meli.la/1qrhSa2" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/2SVDRKT" target="_blank" rel="sponsored noopener"><img src="img/cerave-pm.jpg" alt="CeraVe Loción facial PM crema de noche 52 ml" loading="lazy" width="480" height="480"><span class="tag">-43%</span></a>
+  <div class="info">
+    <p class="marca">CeraVe <span class="of">✓ Oficial</span></p>
+    <h3>CeraVe Loción facial PM crema de noche 52 ml</h3>
+    <p class="precio"><b>$296</b><s>$529</s></p>
+    <p class="meta">★ 4.9 · +10 mil vendidos</p>
+    <a class="btn" href="https://meli.la/2SVDRKT" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="casa">
+  <a class="ph" href="https://meli.la/1xdiaUM" target="_blank" rel="sponsored noopener"><img src="img/philips-freidora.jpg" alt="Freidora de aire Philips Serie 1000 de 6.2 L" loading="lazy" width="480" height="480"><span class="tag">-40%</span></a>
+  <div class="info">
+    <p class="marca">Philips <span class="of">✓ Oficial</span></p>
+    <h3>Freidora de aire Philips Serie 1000 de 6.2 L</h3>
+    <p class="precio"><b>$1,199</b><s>$1,999</s></p>
+    <p class="meta">★ 4.9 · +100 vendidos</p>
+    <a class="btn" href="https://meli.la/1xdiaUM" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="casa">
+  <a class="ph" href="https://meli.la/2HA6zT1" target="_blank" rel="sponsored noopener"><img src="img/nespresso-vertuo-pop.jpg" alt="Cafetera Nespresso Vertuo Pop rojo" loading="lazy" width="480" height="480"><span class="tag">-41%</span></a>
+  <div class="info">
+    <p class="marca">Nespresso <span class="of">✓ Oficial</span></p>
+    <h3>Cafetera Nespresso Vertuo Pop rojo</h3>
+    <p class="precio"><b>$2,040</b><s>$3,499</s></p>
+    <p class="meta">★ 4.9 · +100 vendidos</p>
+    <a class="btn" href="https://meli.la/2HA6zT1" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="casa">
+  <a class="ph" href="https://meli.la/11e7aCz" target="_blank" rel="sponsored noopener"><img src="img/ninja-licuadora-pro.jpg" alt="Licuadora Ninja Profesional 1000 W jarra XL" loading="lazy" width="480" height="480"><span class="tag">-31%</span></a>
+  <div class="info">
+    <p class="marca">Ninja <span class="of">✓ Oficial</span></p>
+    <h3>Licuadora Ninja Profesional 1000 W jarra XL</h3>
+    <p class="precio"><b>$1,724</b><s>$2,499</s></p>
+    <p class="meta">★ 4.8 · +5 mil vendidos</p>
+    <a class="btn" href="https://meli.la/11e7aCz" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="casa">
+  <a class="ph" href="https://meli.la/2Nv3zGq" target="_blank" rel="sponsored noopener"><img src="img/oster-xtreme-mix.jpg" alt="Licuadora Oster Profesional Xtreme Mix 1500 W" loading="lazy" width="480" height="480"><span class="tag">-36%</span></a>
+  <div class="info">
+    <p class="marca">Oster <span class="of">✓ Oficial</span></p>
+    <h3>Licuadora Oster Profesional Xtreme Mix 1500 W</h3>
+    <p class="precio"><b>$1,890</b><s>$2,990</s></p>
+    <p class="meta">★ 4.8 · +10 mil vendidos</p>
+    <a class="btn" href="https://meli.la/2Nv3zGq" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="casa">
+  <a class="ph" href="https://meli.la/1Ks6j1r" target="_blank" rel="sponsored noopener"><img src="img/oster-freidora-75.jpg" alt="Freidora de aire Oster DiamondForce 7.5 L" loading="lazy" width="480" height="480"><span class="tag">-30%</span></a>
+  <div class="info">
+    <p class="marca">Oster <span class="of">✓ Oficial</span></p>
+    <h3>Freidora de aire Oster DiamondForce 7.5 L</h3>
+    <p class="precio"><b>$2,381</b><s>$3,402</s></p>
+    <p class="meta">★ 4.9 · +5 mil vendidos</p>
+    <a class="btn" href="https://meli.la/1Ks6j1r" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="casa">
+  <a class="ph" href="https://meli.la/1Yryzjo" target="_blank" rel="sponsored noopener"><img src="img/xiaomi-s40c.jpg" alt="Robot aspiradora y trapeador Xiaomi S40c 5000 Pa" loading="lazy" width="480" height="480"><span class="tag">-30%</span></a>
+  <div class="info">
+    <p class="marca">Xiaomi <span class="of">✓ Oficial</span></p>
+    <h3>Robot aspiradora y trapeador Xiaomi S40c 5000 Pa</h3>
+    <p class="precio"><b>$3,499</b><s>$4,999</s></p>
+    <p class="meta">★ 4.8 · +500 vendidos</p>
+    <a class="btn" href="https://meli.la/1Yryzjo" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="casa">
+  <a class="ph" href="https://meli.la/2bh5BVv" target="_blank" rel="sponsored noopener"><img src="img/tfal-olla-express.jpg" alt="Olla de presión T-fal Express 8 L acero inoxidable" loading="lazy" width="480" height="480"><span class="tag">-33%</span></a>
+  <div class="info">
+    <p class="marca">T-fal <span class="of">✓ Oficial</span></p>
+    <h3>Olla de presión T-fal Express 8 L acero inoxidable</h3>
+    <p class="precio"><b>$1,799</b><s>$2,699</s></p>
+    <p class="meta">★ 4.9 · +10 mil vendidos</p>
+    <a class="btn" href="https://meli.la/2bh5BVv" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 27 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="casa">
+  <a class="ph" href="https://meli.la/12LZ1GX" target="_blank" rel="sponsored noopener"><img src="img/tfal-bateria-25.jpg" alt="Batería de cocina T-fal Family Cook 25 piezas roja" loading="lazy" width="480" height="480"><span class="tag">-40%</span></a>
+  <div class="info">
+    <p class="marca">T-fal <span class="of">✓ Oficial</span></p>
+    <h3>Batería de cocina T-fal Family Cook 25 piezas roja</h3>
+    <p class="precio"><b>$2,549</b><s>$4,249</s></p>
+    <p class="meta">★ 4.8 · +100 vendidos</p>
+    <a class="btn" href="https://meli.la/12LZ1GX" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="casa">
+  <a class="ph" href="https://meli.la/1hseJiv" target="_blank" rel="sponsored noopener"><img src="img/bd-horno-freidora.jpg" alt="Horno freidora Black+Decker de 11 L" loading="lazy" width="480" height="480"><span class="tag">-30%</span></a>
+  <div class="info">
+    <p class="marca">Black+Decker <span class="of">✓ Oficial</span></p>
+    <h3>Horno freidora Black+Decker de 11 L</h3>
+    <p class="precio"><b>$1,129</b><s>$1,627</s></p>
+    <p class="meta">★ 4.8 · +500 vendidos</p>
+    <a class="btn" href="https://meli.la/1hseJiv" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="casa">
+  <a class="ph" href="https://meli.la/2aCpodu" target="_blank" rel="sponsored noopener"><img src="img/chefman-espresso.jpg" alt="Cafetera espresso Chefman digital 15 bares" loading="lazy" width="480" height="480"><span class="tag">-39%</span></a>
+  <div class="info">
+    <p class="marca">Chefman</p>
+    <h3>Cafetera espresso Chefman digital 15 bares</h3>
+    <p class="precio"><b>$1,519</b><s>$2,499</s></p>
+    <p class="meta">★ 4.8 · +1000 vendidos</p>
+    <a class="btn" href="https://meli.la/2aCpodu" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="casa">
+  <a class="ph" href="https://meli.la/2t8bUKM" target="_blank" rel="sponsored noopener"><img src="img/roborock-q7l5.jpg" alt="Robot aspiradora y trapeador Roborock Q7 L5 8,000 Pa" loading="lazy" width="480" height="480"><span class="tag">-62%</span></a>
+  <div class="info">
+    <p class="marca">Roborock <span class="of">✓ Oficial</span></p>
+    <h3>Robot aspiradora y trapeador Roborock Q7 L5 8,000 Pa</h3>
+    <p class="precio"><b>$4,499</b><s>$11,999</s></p>
+    <p class="meta">★ 4.8 · +1000 vendidos</p>
+    <a class="btn" href="https://meli.la/2t8bUKM" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="tech">
+  <a class="ph" href="https://meli.la/2oGsWkX" target="_blank" rel="sponsored noopener"><img src="img/galaxy-buds4pro.jpg" alt="Audífonos Samsung Galaxy Buds4 Pro negro" loading="lazy" width="480" height="480"><span class="tag">-52%</span></a>
+  <div class="info">
+    <p class="marca">Samsung <span class="of">✓ Oficial</span></p>
+    <h3>Audífonos Samsung Galaxy Buds4 Pro negro</h3>
+    <p class="precio"><b>$3,329</b><s>$6,999</s></p>
+    <p class="meta">★ 4.9 · +10 mil vendidos</p>
+    <a class="btn" href="https://meli.la/2oGsWkX" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/2oMQJNJ" target="_blank" rel="sponsored noopener"><img src="img/versace-eros-energy.jpg" alt="Perfume Versace Eros Energy para hombre 100 ml" loading="lazy" width="480" height="480"><span class="tag">-64%</span></a>
+  <div class="info">
+    <p class="marca">Versace</p>
+    <h3>Perfume Versace Eros Energy para hombre 100 ml</h3>
+    <p class="precio"><b>$1,249</b><s>$3,499</s></p>
+    <p class="meta">★ 4.8 · +5 mil vendidos</p>
+    <a class="btn" href="https://meli.la/2oMQJNJ" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 26 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/2ALHYcv" target="_blank" rel="sponsored noopener"><img src="img/uvmune.jpg" alt="La Roche-Posay Anthelios UV Mune 400 FPS 50+ 50 ml" loading="lazy" width="480" height="480"><span class="tag">-51%</span></a>
+  <div class="info">
+    <p class="marca">La Roche-Posay <span class="of">✓ Oficial</span></p>
+    <h3>La Roche-Posay Anthelios UV Mune 400 FPS 50+ 50 ml</h3>
+    <p class="precio"><b>$363</b><s>$749</s></p>
+    <p class="meta">★ 4.7 · +50 mil vendidos</p>
+    <a class="btn" href="https://meli.la/2ALHYcv" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 25 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/1Bbso7s" target="_blank" rel="sponsored noopener"><img src="img/retinol-b3.jpg" alt="La Roche-Posay Retinol B3 sérum antiarrugas 30 ml" loading="lazy" width="480" height="480"><span class="tag">-39%</span></a>
+  <div class="info">
+    <p class="marca">La Roche-Posay <span class="of">✓ Oficial</span></p>
+    <h3>La Roche-Posay Retinol B3 sérum antiarrugas 30 ml</h3>
+    <p class="precio"><b>$849</b><s>$1,399</s></p>
+    <p class="meta">★ 4.8 · +50 mil vendidos</p>
+    <a class="btn" href="https://meli.la/1Bbso7s" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 25 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/2cQNnuq" target="_blank" rel="sponsored noopener"><img src="img/effaclar-mat.jpg" alt="La Roche-Posay Effaclar Mat+ crema matificante 40 ml" loading="lazy" width="480" height="480"><span class="tag">-45%</span></a>
+  <div class="info">
+    <p class="marca">La Roche-Posay <span class="of">✓ Oficial</span></p>
+    <h3>La Roche-Posay Effaclar Mat+ crema matificante 40 ml</h3>
+    <p class="precio"><b>$488</b><s>$899</s></p>
+    <p class="meta">★ 4.8 · +50 mil vendidos</p>
+    <a class="btn" href="https://meli.la/2cQNnuq" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 25 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/1KnBo1n" target="_blank" rel="sponsored noopener"><img src="img/kit-lrp.jpg" alt="Kit La Roche-Posay Hyalu B5 + Anthelios UVAir" loading="lazy" width="480" height="480"><span class="tag">-47%</span></a>
+  <div class="info">
+    <p class="marca">La Roche-Posay <span class="of">✓ Oficial</span></p>
+    <h3>Kit La Roche-Posay Hyalu B5 + Anthelios UVAir</h3>
+    <p class="precio"><b>$1,013</b><s>$1,948</s></p>
+    <p class="meta">★ 5.0 · +100 vendidos</p>
+    <a class="btn" href="https://meli.la/1KnBo1n" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 25 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/2g7NTtB" target="_blank" rel="sponsored noopener"><img src="img/eucerin.jpg" alt="Eucerin Oil Control FPS 50+ toque seco 50 ml" loading="lazy" width="480" height="480"><span class="tag">-51%</span></a>
+  <div class="info">
+    <p class="marca">Eucerin</p>
+    <h3>Eucerin Oil Control FPS 50+ toque seco 50 ml</h3>
+    <p class="precio"><b>$290</b><s>$599</s></p>
+    <p class="meta">★ 5.0 · +500 vendidos</p>
+    <a class="btn" href="https://meli.la/2g7NTtB" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 25 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/1VAuGYk" target="_blank" rel="sponsored noopener"><img src="img/rasasi.jpg" alt="Perfume Rasasi Hawas Ice EDP 100 ml" loading="lazy" width="480" height="480"><span class="tag">-44%</span></a>
+  <div class="info">
+    <p class="marca">Rasasi <span class="of">✓ Oficial</span></p>
+    <h3>Perfume Rasasi Hawas Ice EDP 100 ml</h3>
+    <p class="precio"><b>$775</b><s>$1,409</s></p>
+    <p class="meta">★ 4.8 · +100 mil vendidos</p>
+    <a class="btn" href="https://meli.la/1VAuGYk" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 25 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/29CbFvE" target="_blank" rel="sponsored noopener"><img src="img/lattafa.jpg" alt="Perfume Lattafa Eclaire EDP 100 ml para dama" loading="lazy" width="480" height="480"><span class="tag">-58%</span></a>
+  <div class="info">
+    <p class="marca">Lattafa</p>
+    <h3>Perfume Lattafa Eclaire EDP 100 ml para dama</h3>
+    <p class="precio"><b>$699</b><s>$1,699</s></p>
+    <p class="meta">★ 4.8 · +10 mil vendidos</p>
+    <a class="btn" href="https://meli.la/29CbFvE" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 25 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="tech">
+  <a class="ph" href="https://meli.la/2ttFyGZ" target="_blank" rel="sponsored noopener"><img src="img/redmi-buds.jpg" alt="Audífonos Xiaomi Redmi Buds 8 Lite" loading="lazy" width="480" height="480"><span class="tag">-58%</span></a>
+  <div class="info">
+    <p class="marca">Xiaomi <span class="of">✓ Oficial</span></p>
+    <h3>Audífonos Xiaomi Redmi Buds 8 Lite</h3>
+    <p class="precio"><b>$419</b><s>$999</s></p>
+    <p class="meta">★ 4.8 · +10 mil vendidos</p>
+    <a class="btn" href="https://meli.la/2ttFyGZ" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 25 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="tech">
+  <a class="ph" href="https://meli.la/2K2qPhT" target="_blank" rel="sponsored noopener"><img src="img/soundcore.jpg" alt="Audífonos Anker Soundcore P30i con cancelación de ruido" loading="lazy" width="480" height="480"><span class="tag">-46%</span></a>
+  <div class="info">
+    <p class="marca">Soundcore <span class="of">✓ Oficial</span></p>
+    <h3>Audífonos Anker Soundcore P30i con cancelación de ruido</h3>
+    <p class="precio"><b>$537</b><s>$999</s></p>
+    <p class="meta">★ 4.9 · +10 mil vendidos</p>
+    <a class="btn" href="https://meli.la/2K2qPhT" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 25 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="tech">
+  <a class="ph" href="https://meli.la/14j6sfy" target="_blank" rel="sponsored noopener"><img src="img/huawei-gt5.jpg" alt="Smartwatch Huawei Watch GT 5 41 mm" loading="lazy" width="480" height="480"><span class="tag">-47%</span></a>
+  <div class="info">
+    <p class="marca">Huawei</p>
+    <h3>Smartwatch Huawei Watch GT 5 41 mm</h3>
+    <p class="precio"><b>$3,699</b><s>$6,999</s></p>
+    <p class="meta">★ 4.9 · +500 vendidos</p>
+    <a class="btn" href="https://meli.la/14j6sfy" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 25 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="tech">
+  <a class="ph" href="https://meli.la/161wH59" target="_blank" rel="sponsored noopener"><img src="img/jbl-flip7.jpg" alt="Bocina JBL Flip 7 portátil a prueba de agua" loading="lazy" width="480" height="480"><span class="tag">-43%</span></a>
+  <div class="info">
+    <p class="marca">JBL</p>
+    <h3>Bocina JBL Flip 7 portátil a prueba de agua</h3>
+    <p class="precio"><b>$1,539</b><s>$2,731</s></p>
+    <p class="meta">★ 4.9 · +10 mil vendidos</p>
+    <a class="btn" href="https://meli.la/161wH59" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 25 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="casa">
+  <a class="ph" href="https://meli.la/1Em4gNv" target="_blank" rel="sponsored noopener"><img src="img/ninja-blast.jpg" alt="Licuadora portátil Ninja Blast inalámbrica" loading="lazy" width="480" height="480"><span class="tag">-60%</span></a>
+  <div class="info">
+    <p class="marca">Ninja</p>
+    <h3>Licuadora portátil Ninja Blast inalámbrica</h3>
+    <p class="precio"><b>$910</b><s>$2,299</s></p>
+    <p class="meta">★ 4.8 · +5 mil vendidos</p>
+    <a class="btn" href="https://meli.la/1Em4gNv" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 25 oct · puede cambiar</p>
+  </div>
+</article>
+<article class="card" data-cat="belleza">
+  <a class="ph" href="https://meli.la/2FMNVcx" target="_blank" rel="sponsored noopener"><img src="img/afnan-9pm.jpg" alt="Perfume Afnan 9pm EDP 150 ml para hombre" loading="lazy" width="480" height="480"><span class="tag">-48%</span></a>
+  <div class="info">
+    <p class="marca">Afnan <span class="of">✓ Oficial</span></p>
+    <h3>Perfume Afnan 9pm EDP 150 ml para hombre</h3>
+    <p class="precio"><b>$769</b><s>$1,499</s></p>
+    <p class="meta">★ 4.8 · +10 mil vendidos</p>
+    <a class="btn" href="https://meli.la/2FMNVcx" target="_blank" rel="sponsored noopener">Ver oferta →</a>
+    <p class="pie">Precio al 25 oct · puede cambiar</p>
+  </div>
+</article>
+  </section>
+  </div>
+
+  <section class="pide">
+    <p class="t">¿Buscas algo? <em>Te lo encontramos.</em></p>
+    <p class="d">Mándanos el nombre o una captura del producto y buscamos la mejor opción de tienda oficial.</p>
+    <a href="https://ig.me/m/ofertasradar.mx" target="_blank" rel="noopener">Pídelo por Instagram</a>
+  </section>
+
+  <h2>¿Cómo <em>funciona?</em></h2>
+  <div class="faq">
+    <details><summary>¿Cómo compro?</summary><p>Toca la oferta: se abre en Mercado Libre y compras ahí como siempre, con tu cuenta, tu pago y la garantía de Mercado Libre. Nosotros no vendemos nada.</p></details>
+    <details><summary>¿De dónde salen las ofertas?</summary><p>Buscamos primero en la tienda oficial de cada marca. Si no hay, solo vendedores con miles de ventas y buena reputación.</p></details>
+    <details><summary>¿El precio es el mismo?</summary><p>Ponemos el precio que vimos ese día. Mercado Libre lo puede cambiar; si sube o se agota, lo actualizamos o lo quitamos.</p></details>
+    <details><summary>¿Es seguro comprar?</summary><p>Sí. La compra la haces directo en Mercado Libre, con su Compra Protegida: si no llega o no es lo que pediste, te devuelven tu dinero. Y el precio es el mismo que verías entrando por tu cuenta.</p></details>
+  </div>
+</main>
+
+<footer>
+  <p><a href="https://instagram.com/ofertasradar.mx">@ofertasradar.mx</a> · <a href="https://whatsapp.com/channel/0029VbDg7woLtOjGkAVMZi3C">Canal de WhatsApp</a></p>
+  <p>Links de afiliado de Mercado Libre. #publicidad</p>
+  <p>Precios al 27 oct 2026 o antes, según cada oferta · pueden cambiar. No somos Mercado Libre ni las marcas mostradas.</p>
+</footer>
+</div>
+<script>
+const chips = document.querySelectorAll('.chip'), cards = document.querySelectorAll('#ofertas .card');
+chips.forEach((c) => c.addEventListener('click', () => {
+  chips.forEach((x) => x.classList.toggle('on', x === c));
+  cards.forEach((k) => { k.hidden = c.dataset.f !== 'todo' && k.dataset.cat !== c.dataset.f; });
+}));
+
+// puntitos del radar: llevan a una oferta al azar (distinta de la anterior) y la resaltan
+const todas = [...document.querySelectorAll('.card')];
+let anterior;
+document.querySelectorAll('.blip').forEach((b) => b.addEventListener('click', () => {
+  if (document.querySelector('.chip.on')?.dataset.f !== 'todo') document.querySelector('.chip[data-f=todo]').click();
+  let k; do k = todas[Math.floor(Math.random() * todas.length)]; while (k === anterior && todas.length > 1);
+  anterior = k;
+  todas.forEach((x) => x.classList.remove('elegida'));
+  k.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center' });
+  void k.offsetWidth; k.classList.add('elegida');
+  k.querySelector('.btn').focus({ preventScroll: true });
+  setTimeout(() => k.classList.remove('elegida'), 4000);
+}));
+</script>
+</body>
+</html>
